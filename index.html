@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesper - Cyberpunk Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen / Entry Animation -->
+    <div id="loading-screen">
+        <div class="glitch-wrapper">
+            <h1 class="glitch" data-text="VESPER">VESPER</h1>
+        </div>
+        <p class="loading-text">Developer • Creator • Innovator</p>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <!-- Navigation -->
+        <nav class="cyber-nav">
+            <div class="nav-logo">
+                <span class="glitch-small" data-text="VESPER">VESPER</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="blog.html" class="nav-link blog-link">Blog</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" class="section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title glitch" data-text="VESPER">VESPER</h1>
+                    <p class="hero-subtitle">
+                        <span class="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </p>
+                    <div class="hero-description">
+                        <p>Full-Stack Developer | Open Source Enthusiast | Tech Explorer</p>
+                        <p>Building the future, one line of code at a time</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="cyber-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-bracket">[</span>
+                    About Me
+                    <span class="title-bracket">]</span>
+                </h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="scan-line">
+                            Welcome to my digital realm. I'm Vesper, a passionate developer exploring the intersection
+                            of technology and creativity. With expertise in full-stack development, I craft innovative
+                            solutions and contribute to open-source projects that push boundaries.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-value" id="total-commits">0</div>
+                                <div class="stat-label">Total Commits</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value" id="total-repos">0</div>
+                                <div class="stat-label">Repositories</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value" id="total-stars">0</div>
+                                <div class="stat-label">Stars Earned</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-bracket">[</span>
+                    Open Source Projects
+                    <span class="title-bracket">]</span>
+                </h2>
+                <div id="projects-grid" class="projects-grid">
+                    <!-- Projects will be loaded dynamically -->
+                    <div class="loading-spinner"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commit Statistics Chart -->
+        <section id="stats" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-bracket">[</span>
+                    Contribution Statistics
+                    <span class="title-bracket">]</span>
+                </h2>
+                <div class="chart-container">
+                    <canvas id="commits-chart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Gallery (Books & Movies) -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-bracket">[</span>
+                    Personal Favorites
+                    <span class="title-bracket">]</span>
+                </h2>
+
+                <!-- Books -->
+                <div class="gallery-section">
+                    <h3 class="gallery-subtitle">Books</h3>
+                    <div class="gallery-grid" id="books-gallery">
+                        <div class="gallery-item">
+                            <div class="gallery-card">
+                                <div class="gallery-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                    <span class="gallery-icon">📚</span>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Neuromancer</h4>
+                                    <p>William Gibson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-card">
+                                <div class="gallery-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                    <span class="gallery-icon">📚</span>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Snow Crash</h4>
+                                    <p>Neal Stephenson</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-card">
+                                <div class="gallery-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                    <span class="gallery-icon">📚</span>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Do Androids Dream</h4>
+                                    <p>Philip K. Dick</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-card">
+                                <div class="gallery-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                                    <span class="gallery-icon">📚</span>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>The Pragmatic Programmer</h4>
+                                    <p>Andrew Hunt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movies -->
+                <div class="gallery-section">
+                    <h3 class="gallery-subtitle">Movies</h3>
+                    <div class="gallery-grid" id="movies-gallery">
+                        <div class="gallery-item">
+                            <div class="gallery-card">
+                                <div class="gallery-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                                    <span class="gallery-icon">🎬</span>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Blade Runner 2049</h4>
+                                    <p>Denis Villeneuve</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-card">
+                                <div class="gallery-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                                    <span class="gallery-icon">🎬</span>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>The Matrix</h4>
+                                    <p>Wachowski Sisters</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-card">
+                                <div class="gallery-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                                    <span class="gallery-icon">🎬</span>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Ghost in the Shell</h4>
+                                    <p>Mamoru Oshii</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-card">
+                                <div class="gallery-image" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);">
+                                    <span class="gallery-icon">🎬</span>
+                                </div>
+                                <div class="gallery-info">
+                                    <h4>Tron: Legacy</h4>
+                                    <p>Joseph Kosinski</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-bracket">[</span>
+                    Contact Me
+                    <span class="title-bracket">]</span>
+                </h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:vesper@example.com">vesper@example.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </div>
+                        <h3>X (Twitter)</h3>
+                        <a href="https://x.com/vesper" target="_blank">@vesper</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                        </div>
+                        <h3>WeChat</h3>
+                        <a href="#" onclick="alert('WeChat ID: vesper_dev')">vesper_dev</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <text x="12" y="16" text-anchor="middle" fill="currentColor" font-size="12" font-weight="bold">小红书</text>
+                            </svg>
+                        </div>
+                        <h3>小红书</h3>
+                        <a href="https://www.xiaohongshu.com/" target="_blank">@vesper</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/vesper" target="_blank" id="github-link">@vesper</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Vesper. All rights reserved.</p>
+                <p class="footer-tagline">Built with <span class="pulse">❤</span> in the digital realm</p>
+            </div>
+        </footer>
+
+        <!-- Floating particles background -->
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/github.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>
