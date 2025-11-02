@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Vesper's Digital Diary</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="cyber-nav">
+        <div class="nav-logo">
+            <a href="index.html" style="text-decoration: none;">
+                <span class="glitch-small" data-text="VESPER">VESPER</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#about" class="nav-link">About</a>
+            <a href="index.html#projects" class="nav-link">Projects</a>
+            <a href="index.html#gallery" class="nav-link">Gallery</a>
+            <a href="index.html#contact" class="nav-link">Contact</a>
+            <a href="blog.html" class="nav-link blog-link">Blog</a>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1 class="glitch" data-text="DIGITAL DIARY">DIGITAL DIARY</h1>
+            <p class="blog-tagline">Thoughts, experiences, and explorations in the digital realm</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-post" data-date="2024-11-02">
+                    <div class="post-header">
+                        <div class="post-meta">
+                            <span class="post-date">2024.11.02</span>
+                            <span class="post-category">Tech</span>
+                        </div>
+                        <h2 class="post-title">Welcome to the Cyberpunk Realm</h2>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            Welcome to my digital sanctuary. This is where I document my journey through the vast
+                            landscape of technology, code, and innovation. In this space, I'll share my thoughts on
+                            software development, emerging technologies, and the creative process behind building
+                            digital experiences.
+                        </p>
+                        <p>
+                            The cyberpunk aesthetic isn't just a visual choice—it represents a philosophy of pushing
+                            boundaries, questioning conventions, and embracing the fusion of humanity and technology.
+                            Every line of code we write is a step into the future.
+                        </p>
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-tags">
+                            <span class="tag">Introduction</span>
+                            <span class="tag">Philosophy</span>
+                            <span class="tag">Cyberpunk</span>
+                        </div>
+                        <button class="read-more" onclick="togglePost(this)">Read More</button>
+                    </div>
+                    <div class="post-extended" style="display: none;">
+                        <p>
+                            As developers, we're not just building applications—we're crafting experiences, solving
+                            problems, and shaping the digital world. This blog will be a chronicle of that journey,
+                            featuring deep dives into technical challenges, reviews of cutting-edge tools, and
+                            reflections on what it means to create in the modern age.
+                        </p>
+                        <p>
+                            Stay tuned for regular updates about my projects, tutorials, and musings on the
+                            ever-evolving tech landscape.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post" data-date="2024-11-01">
+                    <div class="post-header">
+                        <div class="post-meta">
+                            <span class="post-date">2024.11.01</span>
+                            <span class="post-category">Development</span>
+                        </div>
+                        <h2 class="post-title">Building with Modern Web Technologies</h2>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            Today, I want to talk about the incredible evolution of web technologies. From simple
+                            HTML pages to complex, interactive applications, the web has come a long way. Modern
+                            browsers now support features that were unimaginable just a decade ago.
+                        </p>
+                        <p>
+                            CSS has evolved into a powerful design language with Grid, Flexbox, and custom properties.
+                            JavaScript frameworks and libraries have made it possible to build sophisticated UIs with
+                            excellent performance. The future of web development is brighter than ever.
+                        </p>
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <button class="read-more" onclick="togglePost(this)">Read More</button>
+                    </div>
+                    <div class="post-extended" style="display: none;">
+                        <p>
+                            Key technologies I'm excited about:
+                        </p>
+                        <ul>
+                            <li><strong>WebAssembly</strong> - Bringing near-native performance to the browser</li>
+                            <li><strong>CSS Container Queries</strong> - Revolutionary responsive design capabilities</li>
+                            <li><strong>Web Components</strong> - Reusable, encapsulated custom elements</li>
+                            <li><strong>Progressive Web Apps</strong> - Bridging the gap between web and native</li>
+                        </ul>
+                        <p>
+                            Each of these technologies opens new possibilities for what we can create on the web.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post" data-date="2024-10-28">
+                    <div class="post-header">
+                        <div class="post-meta">
+                            <span class="post-date">2024.10.28</span>
+                            <span class="post-category">Open Source</span>
+                        </div>
+                        <h2 class="post-title">The Power of Open Source</h2>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            Open source software has transformed the way we build technology. It's not just about
+                            free code—it's about collaboration, transparency, and collective innovation. Contributing
+                            to open source has been one of the most rewarding aspects of my development journey.
+                        </p>
+                        <p>
+                            Every pull request, every issue filed, every discussion participated in contributes to
+                            something larger than ourselves. We're building the infrastructure of the future, together.
+                        </p>
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-tags">
+                            <span class="tag">Open Source</span>
+                            <span class="tag">Community</span>
+                            <span class="tag">Collaboration</span>
+                        </div>
+                        <button class="read-more" onclick="togglePost(this)">Read More</button>
+                    </div>
+                    <div class="post-extended" style="display: none;">
+                        <p>
+                            Some of my favorite open source projects and why they matter:
+                        </p>
+                        <ul>
+                            <li><strong>Linux</strong> - The foundation of modern infrastructure</li>
+                            <li><strong>VS Code</strong> - A powerful, extensible editor for everyone</li>
+                            <li><strong>React</strong> - Democratizing UI development</li>
+                            <li><strong>Node.js</strong> - JavaScript everywhere</li>
+                        </ul>
+                        <p>
+                            If you're not yet involved in open source, I encourage you to start. Find a project you
+                            use and love, and see how you can contribute—even documentation improvements are valuable!
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-post" data-date="2024-10-25">
+                    <div class="post-header">
+                        <div class="post-meta">
+                            <span class="post-date">2024.10.25</span>
+                            <span class="post-category">Inspiration</span>
+                        </div>
+                        <h2 class="post-title">Cyberpunk Culture and Tech Philosophy</h2>
+                    </div>
+                    <div class="post-content">
+                        <p>
+                            The cyberpunk genre has always fascinated me—not just as aesthetic inspiration, but as a
+                            lens through which to view our relationship with technology. Works like Neuromancer, Blade
+                            Runner, and Ghost in the Shell explore profound questions about identity, consciousness,
+                            and what it means to be human in a technological age.
+                        </p>
+                        <p>
+                            These themes are increasingly relevant as we navigate AI, virtual reality, and the
+                            ever-growing integration of technology into our daily lives.
+                        </p>
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-tags">
+                            <span class="tag">Cyberpunk</span>
+                            <span class="tag">Philosophy</span>
+                            <span class="tag">Culture</span>
+                        </div>
+                        <button class="read-more" onclick="togglePost(this)">Read More</button>
+                    </div>
+                    <div class="post-extended" style="display: none;">
+                        <p>
+                            What I love about cyberpunk:
+                        </p>
+                        <ul>
+                            <li>The visual aesthetic - neon lights, dark cityscapes, high-tech low-life</li>
+                            <li>The philosophical depth - questions about humanity, consciousness, and reality</li>
+                            <li>The rebellion - challenging corporate power and fighting for individual freedom</li>
+                            <li>The fusion - the beautiful collision of human and machine</li>
+                        </ul>
+                        <p>
+                            As we build the future, let's remember to ask the hard questions and create technology
+                            that empowers rather than controls.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="blog-sidebar">
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Recent Posts</h3>
+                    <ul class="recent-posts">
+                        <li><a href="#" onclick="scrollToPost('2024-11-02')">Welcome to the Cyberpunk Realm</a></li>
+                        <li><a href="#" onclick="scrollToPost('2024-11-01')">Building with Modern Web Technologies</a></li>
+                        <li><a href="#" onclick="scrollToPost('2024-10-28')">The Power of Open Source</a></li>
+                        <li><a href="#" onclick="scrollToPost('2024-10-25')">Cyberpunk Culture and Tech Philosophy</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Categories</h3>
+                    <ul class="categories">
+                        <li><a href="#" onclick="filterByCategory('Tech')">Tech</a></li>
+                        <li><a href="#" onclick="filterByCategory('Development')">Development</a></li>
+                        <li><a href="#" onclick="filterByCategory('Open Source')">Open Source</a></li>
+                        <li><a href="#" onclick="filterByCategory('Inspiration')">Inspiration</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Archives</h3>
+                    <ul class="archives">
+                        <li><a href="#">November 2024</a></li>
+                        <li><a href="#">October 2024</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vesper. All rights reserved.</p>
+            <p class="footer-tagline">Built with <span class="pulse">❤</span> in the digital realm</p>
+        </div>
+    </footer>
+
+    <!-- Floating particles background -->
+    <div class="particles" id="particles"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
